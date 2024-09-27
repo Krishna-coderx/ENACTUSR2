@@ -4,7 +4,7 @@
 
 CODE===
 
-package com.example.irrigationsystem;
+package com.example.systemirrigation;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
