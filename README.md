@@ -1,5 +1,9 @@
 # ENACTUSR2
 
+#ENACTUS TECH PROJECT ROUND 2 MADE BY=== KRISHNA AGARWAL, ROLL NO== 2024UCM2363
+
+CODE===
+
 package com.example.irrigationsystem;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView irrigationStatusTextView;
     private Button fetchDataButton;
 
-    // Example values for soil moisture and weather, replace with actual data from sensors or API
+    // examples for soil moisture and water
     private double soilMoistureLevel = 35.0;
     private String weatherReport = "Sunny";
     private boolean isIrrigationOn = false;
@@ -29,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
         weatherTextView = findViewById(R.id.weatherTextView);
         irrigationStatusTextView = findViewById(R.id.irrigationStatusTextView);
         fetchDataButton = findViewById(R.id.fetchDataButton);
-
-        // Initial display
         updateUI();
 
         // Fetch data when button is clicked
@@ -42,18 +44,16 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Method to simulate data fetching (replace with actual API calls)
+    //the methods to stimullate the data
     private void fetchData() {
-        // Simulate updating data
+        //stimulate the data
         soilMoistureLevel = 40.0;  // Update with new soil moisture level
         weatherReport = "Cloudy";  // Update with new weather report
         isIrrigationOn = soilMoistureLevel < 50.0;  // Example logic to turn irrigation on/off
 
-        // Update the UI with new data
         updateUI();
     }
 
-    // Method to update the UI with the latest data
     private void updateUI() {
         soilMoistureTextView.setText("Soil Moisture Level: " + soilMoistureLevel + "%");
         weatherTextView.setText("Weather Report: " + weatherReport);
@@ -102,3 +102,8 @@ public class MainActivity extends AppCompatActivity {
         android:text="Fetch Latest Data"
         android:layout_marginTop="20dp" />
 </LinearLayout>
+
+
+
+-------------------------------------------------------------------------------------THE END----------------------------------------------------------------------------------------------
+# P.S. - I wasn't able to fully accomodate all the details provided to us but I have incorporated what I can. 
